@@ -282,7 +282,12 @@ a {
 .card {
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+.card__header {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 .card__header,
@@ -332,6 +337,20 @@ a {
 
 .plan .list__item {
   margin-bottom: 2rem;
+}
+
+/* Popular plan */
+.plan--popular .card__header {
+  position: relative;
+}
+
+.plan--popular .card__header::before {
+  content: url(../images/popular.svg);
+  display: inline-block;
+  width: 40px;
+  position: absolute;
+  top: -5px;
+  right: 5%;
 }
 
 @media screen and (min-width: 1024px) {
