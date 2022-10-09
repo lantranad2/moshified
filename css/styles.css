@@ -554,6 +554,10 @@ a {
   color: #fff;
 }
 
+.callout--signup {
+  transform: translateY(5rem);
+}
+
 .callout__heading {
   color: #fff;
   margin-top: 0;
@@ -620,7 +624,6 @@ a {
 .block {
   --padding-vertical: 6rem;
   padding: var(--padding-vertical) 2rem;
-  border: 2px solid red;
 }
 
 .block__heading {
@@ -761,8 +764,14 @@ a {
   color: var(--color-headings);
 }
 
+@media screen and (min-width: 480px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media screen and (min-width: 768px) {
-  .domain-block__prices {
+  .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
@@ -901,5 +910,3 @@ a {
     font-size: 1.6rem;
   }
 }
-
-/* TODO: 32 */
